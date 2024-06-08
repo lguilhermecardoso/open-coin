@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { PieChart } from 'react-native-chart-kit';
 import { LineChart } from '@components/LineChart';
 import { CandleStickChart } from '@components/CandleStickChart';
+import { HomeHeader } from '@components/HomeHeader';
 const BINANCE_WS_BASE_URL = 'wss://stream.binance.com:9443/ws';
 const UPDATE_INTERVAL_MS = 2000; // Ajustado para 2 segundos
 
@@ -108,38 +109,39 @@ export function Home() {
   }
   
   return (
-    <Center flex={1} bg="gray.700">
-      <SafeAreaView style={{
-        margin: 5
-      }}>
-        <ScrollView>
-          <Text color="white.100" fontSize="lg" mb="2">Gráfico de Preços de Bitcoin (Linha)</Text>
-          <LineChart data={lineDataYValues} />
-          <Text color="white.100" fontSize="lg" mt="4" mb="2">Gráfico de Velas de Bitcoin</Text>
-          <CandleStickChart data={candleChartData} />
+    <Center bg="gray.700">
+      <SafeAreaView>
+        <HomeHeader />
+        <View flex={1} px={6}>
+          <ScrollView>
+            <Text color="white.100" fontSize="lg" mb="2">Gráfico de Preços de Bitcoin (Linha)</Text>
+            <LineChart data={lineDataYValues} />
+            <Text color="white.100" fontSize="lg" mt="4" mb="2">Gráfico de Velas de Bitcoin</Text>
+            <CandleStickChart data={candleChartData} />
 
-          <Text color="white.100" fontSize="lg" mb="2">Gráfico de Volumes de Negociação</Text>
-          <PieChart
-            data={pieData}
-            width={Dimensions.get('window').width - 80}
-            height={220}
-            chartConfig={{
-              backgroundColor: '#1e2923',
-              backgroundGradientFrom: '#1e2923',
-              backgroundGradientTo: '#08130d',
-              decimalPlaces: 2,
-              color: (opacity = 1) => `rgba(26, 255, 146, ${opacity})`,
-              labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-              style: {
-                borderRadius: 4,
-              },
-            }}
-            accessor="volume"
-            backgroundColor="transparent"
-            paddingLeft="15"
-            absolute
-          />
-        </ScrollView>
+            <Text color="white.100" fontSize="lg" mb="2">Gráfico de Volumes de Negociação</Text>
+            <PieChart
+              data={pieData}
+              width={Dimensions.get('window').width - 80}
+              height={220}
+              chartConfig={{
+                backgroundColor: '#1e2923',
+                backgroundGradientFrom: '#1e2923',
+                backgroundGradientTo: '#08130d',
+                decimalPlaces: 2,
+                color: (opacity = 1) => `rgba(26, 255, 146, ${opacity})`,
+                labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+                style: {
+                  borderRadius: 4,
+                },
+              }}
+              accessor="volume"
+              backgroundColor="transparent"
+              paddingLeft="15"
+              absolute
+            />
+          </ScrollView>
+        </View>
       </SafeAreaView>
     </Center>
   );

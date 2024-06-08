@@ -1,9 +1,10 @@
-import { Center, Text } from 'native-base';
+import { ScreenHeader } from '@components/ScreenHeader';
+import { Center, Text, VStack } from 'native-base';
 
 export function Configuration() {
   return (
-    <Center flex={1} bg="gray.700">
-      <Text color="white.100">Hello, Configuration!</Text>
-    </Center>
+    <VStack flex={1} bg="gray.700">
+      <ScreenHeader title='Configurações' />
+    </VStack>
   );
 }
