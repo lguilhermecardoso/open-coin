@@ -17,6 +17,8 @@ open-coin é um aplicativo desenvolvido em React Native com Expo, que permite o 
 - Interface amigável e responsiva.
 
 ## Screens Shots
+![202406081509 (1)](https://github.com/lguilhermecardoso/open-coin/assets/15979107/b2a9af7f-325a-4a0c-b53c-b743efd1c9be)
+
 ![Screenshot 2024-06-08 at 14 51 02](https://github.com/lguilhermecardoso/open-coin/assets/15979107/08692c3a-5303-4385-a8cc-5dd222071616)
 
 
@@ -65,9 +67,10 @@ npm run android
 
 ```perl
 open-coin/
-├── assets/               # Assets do projeto (imagens, fontes, etc.)
-├── components/           # Componentes reutilizáveis
-├── screens/              # Telas do aplicativo
+├── src/                  # Arquivos do projeto
+│   ├── assets/           # Assets do projeto (imagens, fontes, etc.)
+│   ├── components/       # Componentes reutilizáveis
+│   ├── screens/          # Telas do aplicativo
 ├── App.js                # Arquivo principal do aplicativo
 ├── app.json              # Configurações do Expo
 └── README.md             # Este arquivo
