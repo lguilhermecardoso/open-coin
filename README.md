@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://github.com/lguilhermecardoso/open-coin/assets/15979107/c215147a-042f-485a-a1d0-13802b91d4e2" width="200"/>
+</div>
+
 # open-coin
 
 open-coin é um aplicativo de monitoramento de dados de Bitcoins em tempo real usando o websocket da Binance!
@@ -12,7 +16,14 @@ open-coin é um aplicativo desenvolvido em React Native com Expo, que permite o 
 - Gráficos de linha e velas para visualização de dados históricos.
 - Interface amigável e responsiva.
 
+## Screens Shots
+![Screenshot 2024-06-08 at 14 51 02](https://github.com/lguilhermecardoso/open-coin/assets/15979107/08692c3a-5303-4385-a8cc-5dd222071616)
+
+
+
+
 ## Tecnologias Utilizadas
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
 
 Este aplicativo foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 
@@ -61,6 +72,13 @@ open-coin/
 ├── app.json              # Configurações do Expo
 └── README.md             # Este arquivo
 ```
+### Participante: 
+|name|email|
+| -------- | -------- |
+|Guilherme Cardoso | guilhermecardoso.info@gmail.com|
+
+[<img src="https://github.com/lguilhermecardoso.png" width=115 > <br> <sub> Guilherme Cardoso </sub>](https://github.com/lguilhermecardoso) |
+| :---: |  
 
 Contribuindo
 Sinta-se à vontade para fazer um fork do projeto, criar issues, enviar pull requests ou qualquer outra forma de contribuição. Toda ajuda é bem-vinda!
